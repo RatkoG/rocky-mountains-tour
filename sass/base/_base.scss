@@ -1,0 +1,26 @@
+/* BEST RESET FOR NOW */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Ova e za rem units da bida polesni za presmetuvanje 
+    10px e za polesna matematika ama ako usero vo browsero koristi drug font dali saka da zgolemi ili namali nema da bidi dobra tehnika ova.
+    10px che bidi sekogas nema daima efekt ako usero ja menuva default font-size na browsero.
+    100% = 16px ako user ne smenuva nesto.
+    Ama nie sakame 10px...
+    10/16 = 0.625
+*/
+
+html {
+    // This defines what 1rem is. Is not typography
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box;
+}
