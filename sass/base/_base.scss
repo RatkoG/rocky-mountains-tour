@@ -18,6 +18,33 @@
 html {
     // This defines what 1rem is. Is not typography
     font-size: 62.5%;
+    //1rem = 10px; 10px/16px = 62.5%
+
+    //*This is the first way
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+    //! I don't need this one. Reason is the media query is looking for smaller than 600px, both will apply if I have them.
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+    @include respond(tab-land) {
+        font-size: 56.25%; //* 1rem = 8px, 8/16 = 50%;
+    }
+
+
+    @include respond(tab-port) {
+        font-size: 50%; //* 1rem = 8px, 8/16 = 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 31.25%; //* 1rem = 5px, 8/16 = 50%;
+    }
+
+
+    @include respond(big-desktop) {
+        font-size: 75%; //* 1rem = 12px, 12/16 =75%
+    }
 }
 
 body {
