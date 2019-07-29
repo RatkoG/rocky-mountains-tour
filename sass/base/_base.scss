@@ -39,10 +39,10 @@ html {
         font-size: 50%; //* 1rem = 8px, 8/16 = 50%;
     }
 
-    //* width < 600?
-    @include respond(phone) {
-        font-size: 31.25%; //* 1rem = 5px, 8/16 = 50%;
-    }
+    // //* width < 600?
+    // @include respond(phone) {
+    //     font-size: 31.25%; //* 1rem = 5px, 8/16 = 50%;
+    // }
 
     //* width > 1200?
     @include respond(big-desktop) {
@@ -51,6 +51,5 @@ html {
 }
 
 body {
-
     box-sizing: border-box;
 }

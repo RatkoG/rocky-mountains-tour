@@ -2,7 +2,11 @@
   background-color: $color-grey-dark-3;
   padding: 1.4rem;
 
-  &__navigation {}
+  &__navigation {
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
+  }
 
   &__list {
     list-style: none;
